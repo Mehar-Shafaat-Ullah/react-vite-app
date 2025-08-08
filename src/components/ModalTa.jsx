@@ -32,7 +32,7 @@ export default function ModalTa() {
       return (
         <dialog id="my_modal_2" className="modal">
           <div className="modal-box">
-            <h3 className="font-bold text-lg">เพิ่มช่าง</h3>
+            <h3 className="font-bold text-lg">Add Technician</h3>
             <form className="flex flex-col min-w-[200px] border rounded w-3/6 mx-auto p-4 gap-6"
             onSubmit={hdlSubmit}
             style={{ marginTop: '90px' }}
