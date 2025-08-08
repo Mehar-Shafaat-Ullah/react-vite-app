@@ -58,7 +58,7 @@ Equipment reported for repair</td>
   </td>
 </tr>
 <tr className="bg-gray-200">
-  <td className="font-bold border border-gray-200 px-4 py-2"Date of repair completion</td>
+  <td className="font-bold border border-gray-200 px-4 py-2"Date of repair completion></td>
   <td className="border border-gray-200 px-4 py-2">-</td>
 </tr>
 <tr className="bg-gray-100">
