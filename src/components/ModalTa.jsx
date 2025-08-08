@@ -64,7 +64,7 @@ export default function ModalTa() {
               onChange={hdlChange}
             />
           </label>
-          <button type="submit" className="btn btn-primary custom-btn">เพิ่มข้อมูล</button>
+          <button type="submit" className="btn btn-primary custom-btn">Add information</button>
         </form>
           </div>
           <form method="dialog" className="modal-backdrop">
