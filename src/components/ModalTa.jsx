@@ -39,11 +39,11 @@ export default function ModalTa() {
         >
           <label className="form-control w-full max-w-[220px] ">
             <div className="label">
-              <span className="label-text">ชื่อช่าง</span>
+              <span className="label-text">Technician Name</span>
             </div>
             <input
               type="text"
-              placeholder="ชื่อช่าง"
+              placeholder="Technician Name"
               className="input input-bordered w-full "
               name="name"
               value={input.name}
@@ -53,11 +53,11 @@ export default function ModalTa() {
     
           <label className="form-control w-full ">
             <div className="label">
-              <span className="label-text">เบอร์โทร</span>
+              <span className="label-text">phone number</span>
             </div>
             <input
               type="text"
-              placeholder="ช่องทางการติดต่อ"
+              placeholder="Contact channels"
               className="input input-bordered w-full "
               name="phon"
               value={input.phon}
