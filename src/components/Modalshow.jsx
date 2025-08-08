@@ -6,38 +6,39 @@ export default function Modalshow(props) {
   return (
     <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle ">
       <div className="modal-box">
-       <h1 className="text-3xl font-bold mb-4">รายละเอียดการแจ้งซ่อม</h1>
+       <h1 className="text-3xl font-bold mb-4">Details of repair notification</h1>
        <table className="w-full border border-collapse">
   <tbody>
     <tr className="bg-gray-200">
-      <td className="w-1/3 font-bold border border-black border-opacity-100 px-4 py-2">วันที่แจ้งซ่อม</td>
+      <td className="w-1/3 font-bold border border-black border-opacity-100 px-4 py-2">Repair notification date</td>
       <td className="w-2/3 border border-black border-opacity-100 px-4 py-2">
         {new Date(el?.requesDate).toDateString()}
       </td>
     </tr>
     <tr className="bg-gray-100">
-      <td className="font-bold border border-black border-opacity-100 px-4 py-2">ชื่อผู้แจ้ง</td>
+      <td className="font-bold border border-black border-opacity-100 px-4 py-2">Name of informant</td>
       <td className="border border-black border-opacity-100 px-4 py-2">{el?.user.username}</td>
     </tr>
     <tr className="bg-gray-200">
-      <td className="font-bold border border-black border-opacity-100 px-4 py-2">อุปกรณ์ที่แจ้งซ่อม</td>
+      <td className="font-bold border border-black border-opacity-100 px-4 py-2">
+Equipment reported for repair</td>
       <td className="border border-black border-opacity-100 px-4 py-2">{el?.equiment}</td>
     </tr>
     <tr className="bg-gray-100">
-      <td className="font-bold border border-black border-opacity-100 px-4 py-2">รายละเอียด</td>
+      <td className="font-bold border border-black border-opacity-100 px-4 py-2">details</td>
       <td className="border border-black border-opacity-100 px-4 py-2">{el?.detail}</td>
     </tr>
     <tr className="bg-gray-200">
-      <td className="font-bold border border-black border-opacity-100 px-4 py-2">สถานะ</td>
+      <td className="font-bold border border-black border-opacity-100 px-4 py-2">status</td>
       <td
         className="border border-black border-opacity-100 px-4 py-2"
         style={{
           color:
-            el?.status === "ส่งซ่อม"
+            el?.status === "Send for repair"
               ? "red"
-              : el?.status === "รอตรวจสอบ"
+              : el?.status === "รCheck"
               ? "orange"
-              : el?.status === "สำเร็จ"
+              : el?.status === "succeed"
               ? "green"
               : "black",
         }}
@@ -49,23 +50,23 @@ export default function Modalshow(props) {
 </table>
 
 {/* Second Table */}
-<h1 className="text-3xl font-bold mb-4 mt-10">รายละเอียดเพิ่มเติม</h1>
+<h1 className="text-3xl font-bold mb-4 mt-10">More details</h1>
 <tr className="bg-gray-100">
-  <td className="w-1/3 font-bold border border-gray-200 px-4 py-2">วันที่ดำเนินการแก้ไข</td>
+  <td className="w-1/3 font-bold border border-gray-200 px-4 py-2">Corrective action date</td>
   <td className="w-2/3 border border-gray-200 px-4 py-2">
     {/* {new Date(el?.requesDate).toDateString()} */} -
   </td>
 </tr>
 <tr className="bg-gray-200">
-  <td className="font-bold border border-gray-200 px-4 py-2">วันที่ซ่อมเสร็จ</td>
+  <td className="font-bold border border-gray-200 px-4 py-2"Date of repair completion</td>
   <td className="border border-gray-200 px-4 py-2">-</td>
 </tr>
 <tr className="bg-gray-100">
-  <td className="font-bold border border-gray-200 px-4 py-2">รายละเอียด</td>
+  <td className="font-bold border border-gray-200 px-4 py-2">details</td>
   <td className="border border-gray-200 px-4 py-2">-</td>
 </tr>
 <tr className="bg-gray-200">
-  <td className="font-bold border border-gray-200 px-4 py-2">ช่างผู้ดำเนินการ</td>
+  <td className="font-bold border border-gray-200 px-4 py-2">Operator</td>
   <td className="border border-gray-200 px-4 py-2">-</td>
 </tr>
 
